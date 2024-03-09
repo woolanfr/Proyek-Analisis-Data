@@ -26,7 +26,7 @@ def create_yearly_sharing(df):
     yearlyshare_df.reset_index(inplace=True)  
     return yearlyshare_df
 
-clean_df = pd.read_csv("main_data.csv")
+clean_df = pd.read_csv("https://raw.githubusercontent.com/woolanfr/Proyek-Analisis-Data/main/Dashboard/main_data.csv")
 clean_df["dteday"] = pd.to_datetime(clean_df["dteday"])
 
 min_date = clean_df["dteday"].min()
